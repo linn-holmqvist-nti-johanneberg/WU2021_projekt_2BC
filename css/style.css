@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 479px) {
+    /*Mobil grid*/
+    .wrapper_startsida_mobil {
+        display: grid;
+        grid-template-areas: 
+        'nav'
+        'se1'
+        'he1'
+        'ar1'
+        'gu1'
+        'fot' 
+        ;
+        grid-template-columns: 100vw;
+        grid-template-rows: 7vh, 30vh, 10vh, 150vh, 80vh, 40vh;
+    }
+
+    .wrapper_destination_mobil {
+        display: grid;
+        grid-template-areas: 
+        'nav'
+        'fi1'
+        'he2'
+        'se2'
+        'gu2'
+        'fot'
+        ;
+        grid-template-columns: 100vw;
+        grid-template-rows: 7vh, 30vh, 10vh, 100vh, 80vh, 40vh;
+    }
+
+    .wrapper_adventures_mobil {
+        display: grid;
+        grid-template-areas: 
+        'nav'
+        'fi2'
+        'ar2'
+        'gu3'
+        'fot'
+        ;
+        grid-template-columns: 100vw;
+        grid-template-rows: 7vh, 40vh, 300vh, 80vh, 40vh;
+    }
+
+    .wrapper_before_trip_mobil {
+        display: grid;
+        grid-template-areas: 
+        'nav'
+        'he3'
+        'ar3'
+        'ar4'
+        'ar5'
+        'se3'
+        'fot'
+        ;
+        grid-template-columns: 100vw;
+        grid-template-rows: 7vh, 10vh, 70vh, 70vh, 80vh, 50vh, 20vh;
+    }
+
+    .wrapper_questions_mobil {
+        display: grid;
+        grid-template-areas: 
+        'nav'
+        'fi3'
+        'ar6'
+        'gu4'
+        'fot'
+        ;
+        grid-template-columns: 100vw;
+        grid-template-rows: 7vh, 30vh, 250vh, 80vh, 40vh;
+    }
+
+
+    /* Alla mobila sidor som använder samma css */
+    .nav_mobil {
+        grid-area: nav;
+        background-color: lightcyan;
+    }
+
+    .footer_mobil {
+        grid-area: fot;
+        background-color: pink;
+    }
+
+
+    /* Startsida mobil css*/
+
+    #bildspel {
+        grid-area: se1;
+        background-color: blue;
+
+    }
+
+    #header_startsida_mobil {
+        grid-area: he1;
+        background-color: green;
+
+    }
+
+    #welcome {
+        grid-area: ar1;
+        background-color: turquoise;
+
+    }
+
+    #guldkorn_startsida_mobil {
+        grid-area: gu1;
+        background-color: lawngreen;
+    }
+
+
+
+
+
+    /*Denstinations mobil css */
+
+    #img_destinations_mobil {
+        grid-area: fi1;
+        
+    }
+
+    #header_destinations_mobil {
+        grid-area: he2;
+        background-color: lightcoral;
+    }
+
+
+    #countries_mobil {
+        grid-area: se2;
+        background-color: skyblue;
+    }
+
+    #guldkorn_destinations_mobil {
+        grid-area: gu2;
+        background-color: slateblue;
+    }
+
+
+
+
+    /*Adventures mobil css */
+    #img_adventures_mobil {
+        grid-area: fi2;
+    }
+
+    #adventures_text {
+        grid-area: ar2;
+        background-color: lightgrey;
+    }
+
+    #guldkorn_adventures_mobil {
+        grid-area: gu3;
+        background-color: lightseagreen;
+    }
+
+
+
+
+
+
+    /*Before trip mobil css */
+    #header_before_trip {
+        grid-area: he3;
+        background-color: turquoise;
+    }
+
+    #take_with {
+        grid-area: ar3;
+        background-color: lightseagreen;
+    }
+
+    #dont_take_with {
+        grid-area: ar4;
+        background-color: lightslategray;
+    }
+
+    #remeber {
+        grid-area: ar5;
+        background-color: limegreen;
+    }
+
+    #backpack {
+        grid-area: se3;
+        background-color: magenta;
+    }
+
+
+
+    /*Questions mobil css */
+
+    #img_questions_mobil {
+        grid-area: fi3;
+    }
+
+    #the_questions {
+    grid-area: ar6; 
+    background-color: turquoise;
+    }
+
+    #guldkorn_adventures_mobil {
+        grid-area: gu4;
+    }
+
+}
+/*Radera css MEN OCKSÅ TILLHÖRANDE HTML */
+.img_hej{
+    height: 200px;
+}
