@@ -6,22 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Hem</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper_startsida_mobil">
-        <nav class="nav_mobil">
-            <a href="index.html">Hem</a>
-            <a href="destinations.html">Destinationer</a>
-            <a href="adventures.html">Äventyr</a>
-            <a href="before_trip.html">Innan resan</a>
-            <a href="questions.html">Frågor & Svar</a>
+
+    <div class="menu_mobil">
+        <div class="clear">
+            <i class="material-icons" onclick="showmenu()">clear_alt</i>
+        </div>
+        <ul>
+            <li class="line"><a href="index.html" class="link">Hem</a></li>
+            <li class="line"><a href="destinations.html" class="link">Destinationer</a></li>                
+            <li class="line"><a href="adventures.html" class="link">Äventyr</a></li>
+            <li class="line"><a href="before_trip.html" class="link">Innan resan</a></li>
+            <li class="line"><a href="questions.html" class="link">Frågor & Svar</a></li>
+        </ul>
+    </div>  
+
+    <div class="wrapper_startsida_mobil">  
+
+        <nav class="voyage">
+            <div class="menu-button" onclick="showmenu()">
+                <i class="material-icons">menu_alt</i>
+            </div>
+            <a href="index.html" class="link">
+                <p>Voyage!</p>
+                <img src="/img/the_globe_mobil.png" alt="Voyage!" id="logga">
+            </a>
         </nav>
 
-        <section id="bildspel">Bildspel</section>
-        <header id="header_startsida_mobil">Header</header>
-        <article id="welcome">Startsida artikel</article>
-        <section id="guldkorn_startsida_mobil" class="guldkorn_mobil">Guldkorn</section>
-        <footer class="footer_mobil">Footer</footer>
+        <figure id="bildspel">
+            <img src="/img/collage.jpg" alt="fotocollage" id="bildlayout">
+        </section>
+
+        <article id="welcome">
+            <h2 class="head2">
+                Välkommen
+            </h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque temporibus ex aperiam iusto amet eligendi quaerat asperiores facere totam, nostrum voluptas exercitationem omnis vero magni sapiente molestias tenetur ab officiis, incidunt autem. Illum veniam molestias placeat molestiae recusandae eos doloremque incidunt sunt sed minima, excepturi ad iure natus commodi, est reprehenderit eius odio ea id et obcaecati assumenda consectetur. Eos alias aut ipsum possimus illo recusandae provident non inventore. Deserunt earum dolorem sunt fugiat, ullam sed dolorum ipsam quidem sapiente asperiores enim porro officiis et. Impedit sit ratione vero accusamus officia assumenda similique iusto iure, architecto, molestias, ad dolorem nihil?
+            </p>
+        </article>
+
+        <section id="guldkorn_startsida_mobil" class="guldkorn" class="guldkorn_mobil">
+            <h3 class="head3">Guldkorn</h3>
+
+            <br>
+
+            <figure class="guldkorn_figure">
+                <img class="guldkorn_img" src="img/taj_mahal.jpg" alt="Taj Mahal">
+                <img class="guldkorn_img" src="img/ayers_rock.jpg" alt="Ayers Rock">
+                <img class="guldkorn_img" src="img/machu_picchu.jpg" alt="Machu Picchu">
+            </figure>
+             
+
+
+        </section>
+
+        <br>
+
+        <footer class="footer_mobil">
+            <h4 class="h4">Besök oss på våra sociala medier:</h4>
+
+            <br>
+
+            <div class="icons_line">
+                <a href="https://www.instagram.com/"><img class="social_icons" src="/img/instagram.jpg" alt="Instagram logga"></a>
+                <a href="https://www.instagram.com/" class="link">Instagram</a>
+                <br>
+            </div>
+
+            <div class="icons_line">
+                <a href="https://sv-se.facebook.com/"><img class="social_icons" src="/img/facebook.jpg" alt="Facebook logga"></a>
+                <a href="https://sv-se.facebook.com/" class="link">Facebook</a>
+                <br>
+            </div>
+
+            <div class="icons_line">
+                <a href="https://mobile.twitter.com/?lang=sv"><img class="social_icons" src="/img/twitter.jpg" alt="Twitter logga"></a>
+                <a href="https://mobile.twitter.com/?lang=sv" class="link">Twitter</a>
+                <br>
+            </div>
+            <br>
+            <br>
+
+            <h4 class="head4">
+                Om oss:
+            </h4>
+            <p>
+                Hemsidan är skapad av några backpackers som med hjälp och lärdom från många andra 
+                backapckers satt ihop en hemsida till dig som ska ut och resa. Tanken var att den 
+                skulle fungera som ett komplement eller reseinsperation för den resande, som finns i mobilen.
+            </p>
+            <br>
+            <p>Ansvarig utgivare: Linn Holmqvist</p>
+        </footer>
+
+
+
     </div>
 
     <script src="/js/main.js"></script>
