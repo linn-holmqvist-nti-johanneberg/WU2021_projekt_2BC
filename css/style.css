@@ -3,6 +3,82 @@
     margin: 0;
 }
 
+/*Allmänt*/
+p {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: rgb(33, 80, 152);
+    padding-top: 2vw;
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: rgb(33, 80, 152);
+}
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding-top: 2vw;
+    font-size: 25px;
+}
+
+h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}    
+
+.guldkorn {
+    background-color: rgb(241, 238, 221);
+    color: rgb(33, 80, 152);
+    padding: 2%;
+}
+.guldkorn_places {
+    font-size: 20px;
+    text-align: center;
+}
+
+.guldkorn_info {
+    text-align: center;
+}
+
+footer {
+    grid-area: fot;
+    background-color: rgb(33, 80, 152);
+    color: white;
+    padding: 2%;
+}
+
+.social_icons {
+    display: flex;
+    width: 7vw;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    padding-bottom: 1%;
+}
+
+.icons_line {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+
+.footer_headline {
+    font-size: 20px;
+}
+
 @media screen and (max-width: 479px) {
     /*Mobil grid*/
     .wrapper_startsida_mobil {
@@ -84,16 +160,10 @@
         left: -90vw;
         transition: left 0.3s;
         color: white;
-        box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+        box-shadow: 15px 0px 50px -10px rgba(0,0,0,0.75);
         z-index: 10;
         padding-top: 60px;
         padding-bottom: 30px;
-    }
-
-    .link{
-        color: white;
-        text-decoration: none;
-        
     }
 
     .menu-button {
@@ -106,30 +176,12 @@
         color: white;
     }
 
-    .line{
+    .line {
         list-style-type: square;
         line-height: 7vh;
         font-family: sans-serif;
     }
 
-    .head1{
-        text-align: center;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-
-    .head2{
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-
-    .head3{
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-align: center;
-        padding-top: 5vw;
-    }
-
-    .head4{
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
     .show {
         left: 0;
     }
@@ -144,51 +196,29 @@
         top: 25px;
     }
 
-    .clear.visible{
+    .clear.visible {
         display: block;
-    }
-
-    footer{
-        grid-area: fot;
-        background-color: rgb(33, 80, 152);
-        color: white;
-        padding: 2%;
-        font-family: sans-serif;
-    }
-
-    .social_icons {
-        display: flex;
-        width: 7vw;
-        height: auto;
-        border-radius: 8px;
-        margin-bottom: 2px;
-        margin-top: 2px;
-    }
-
-    .icons_line {
-        display: flex;
-        align-items: center;
-    }
+    }    
 
     #logga {
-        width: 100px;
+        width: 80px;
+        margin: 0;
     }
 
-    .voyage{
+    .voyage {
         background-color: rgb(33, 80, 152);
+        display: flex;
     }
 
-
-
-    .guldkorn {
-        background-color: rgb(241, 238, 221);
-        color: rgb(33, 80, 152);
+    .guldkorn_mobil {
+       display: flex; 
     }
 
     .guldkorn_img {
-        width: 60vw;
-        display: flex;
+        width: 50vw;
         padding-bottom: 2%;
+        display: block;
+        margin: auto;
     }
 
 
@@ -198,13 +228,15 @@
         grid-area: se1;
     }
 
-    #bildlayout{
+    #bildlayout {
         width: 100vw;
     }
 
     #welcome {
         grid-area: ar1;
-        padding: 3%;
+        padding-top: 1vh;
+        padding-left: 5vw;
+        padding-right: 2vw;
         font-family: sans-serif;
     }
 
@@ -215,31 +247,42 @@
 
 
 
-
     /*Denstinations mobil css */
 
-    #img_destinations_mobil {
+    #destinations_figure {
         grid-area: fi1;
-        
     }
 
     #header_destinations_mobil {
         grid-area: he2;
-        background-color: lightcoral;
+        border: solid rgb(33, 80, 152);
     }
 
 
     #countries_mobil {
         grid-area: se2;
-        background-color: skyblue;
+    }
+
+    .destinations_text {
+        display: block;
+        padding-top: 2%;
+        padding-left: 5%;
+        padding-right: 3%;
     }
 
     #guldkorn_destinations_mobil {
         grid-area: gu2;
-        background-color: slateblue;
     }
 
+    .main_img_mobil {
+        width: 100vw;
+    }
 
+    .destinations_img {
+        display: block;
+        width: 80vw;
+        margin: auto;
+    }
 
 
     /*Adventures mobil css */
@@ -249,12 +292,19 @@
 
     #adventures_text {
         grid-area: ar2;
-        background-color: lightgrey;
+        color: rgb(33, 80, 152);
+        padding-top: 2%;
+        padding-left: 5%;
+        padding-right: 3%;
+    }
+
+    .adventures_img {
+        width: 50vw;
     }
 
     #guldkorn_adventures_mobil {
         grid-area: gu3;
-        background-color: lightseagreen;
+
     }
 
 
@@ -305,6 +355,6 @@
 
 }
 /*Radera css MEN OCKSÅ TILLHÖRANDE HTML */
-.img_hej{
-    width: 33vw;
+.img_hej {
+    width: 100vw;
 }
