@@ -37,21 +37,14 @@ h4 {
     color: white;
     text-decoration: none;
     font-family: sans-serif;
-}    
+}   
 
 .guldkorn {
     background-color: rgb(241, 238, 221);
     color: rgb(33, 80, 152);
     padding: 2%;
-}
-.guldkorn_places {
-    font-size: 20px;
-    text-align: center;
-}
+}    
 
-.guldkorn_info {
-    text-align: center;
-}
 
 footer {
     grid-area: fot;
@@ -64,7 +57,7 @@ footer {
     display: flex;
     width: 7vw;
     height: auto;
-    border-radius: 8px;
+    border-radius: 25px;
     margin-bottom: 2px;
     margin-top: 2px;
     padding-bottom: 1%;
@@ -80,10 +73,75 @@ footer {
     font-size: 20px;
 }
 
+/*Startsida*/
+#bildspel {
+    grid-area: se1;
+    width: 100vw;
+    position: relative;
+    margin: auto;
+}
+
+.bildlayout {
+    width: 100vw;
+    height: 75vw;
+}
+
+.slides_imgs {
+    display: none;
+}
+
+#welcome {
+    grid-area: ar1;
+    padding-top: 1vh;
+    padding-left: 5vw;
+    padding-right: 2vw;
+    font-family: sans-serif;
+}
+
+
+/*Destinationer*/
+
+.destinations_text {
+    display: block;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 3%;
+}
+
+.main_img_mobil {
+    width: 100vw;
+}
+
+.destinations_img {
+    display: block;
+    width: 80vw;
+    margin: auto;
+}
+
+/*Adventures*/
+
+.adventures_img {
+    width: 50vw;
+}
+
+
+/*Before trip*/
+.before_trip_caption {
+    text-align: left;
+}
+
+.before_trip_text {
+    padding: 3%;
+}
+
+/*Questions*/
+.questions_img {
+    width: 100vw;
+}
 
 @media screen and (max-width: 479px) {
     /*Mobil grid*/
-    .wrapper_startsida_mobil {
+    .wrapper_startsida {
         display: grid;
         grid-template-areas: 
         'nav'
@@ -96,7 +154,7 @@ footer {
         grid-template-rows: 7vh, 30vh, 10vh, 150vh, 80vh, 40vh;
     }
 
-    .wrapper_destination_mobil {
+    .wrapper_destination {
         display: grid;
         grid-template-areas: 
         'nav'
@@ -110,7 +168,7 @@ footer {
         grid-template-rows: 7vh, 30vh, 10vh, 100vh, 80vh, 40vh;
     }
 
-    .wrapper_adventures_mobil {
+    .wrapper_adventures {
         display: grid;
         grid-template-areas: 
         'nav'
@@ -123,7 +181,7 @@ footer {
         grid-template-rows: 7vh, 40vh, 300vh, 80vh, 40vh;
     }
 
-    .wrapper_before_trip_mobil {
+    .wrapper_before_trip {
         display: grid;
         grid-template-areas: 
         'nav'
@@ -138,7 +196,7 @@ footer {
         grid-template-rows: 7vh, 10vh, 70vh, 70vh, 80vh, 50vh, 20vh;
     }
 
-    .wrapper_questions_mobil {
+    .wrapper_questions {
         display: grid;
         grid-template-areas: 
         'nav'
@@ -152,7 +210,19 @@ footer {
     }
 
 
-    /* För alla mobila sidor */
+    /* För alla mobila sidor*/
+
+    #voyage_mobil {
+        grid-area: nav;
+        background-color: rgb(33, 80, 152);
+        display: flex;
+        width: 100vw;
+    }
+
+    #voyage_dator {
+        display: none;
+    }
+
     .menu_mobil {
         width: 70vw;
         height: 100vh;
@@ -204,18 +274,10 @@ footer {
         display: block;
     }    
 
-    #logga {
+    #logga_mobil {
         width: 80px;
         margin: 0;
     }
-
-    .voyage {
-        grid-area: nav;
-        background-color: rgb(33, 80, 152);
-        display: flex;
-        width: 100vw;
-    }
-
 
     .guldkorn_img {
         width: 50vw;
@@ -224,45 +286,22 @@ footer {
         margin: auto;
     }
 
-
-    /* Startsida mobil css*/
-
-    #collage {
-        grid-area: se1;
+    .guldkorn_places {
+        font-size: 20px;
+        text-align: center;
     }
 
-    .bildlayout {
-        width: 100vw;
-        height: 75vw;
+    .guldkorn_info {
+        text-align: center;
     }
 
-    #bildspel {
-        width: 100vw;
-        position: relative;
-        margin: auto;
-    }
+    /* Startsida mobil*/
 
-    .slides_imgs {
-        display: none;
-    }
-
-
-
-
-    #welcome {
-        grid-area: ar1;
-        padding-top: 1vh;
-        padding-left: 5vw;
-        padding-right: 2vw;
-        font-family: sans-serif;
-    }
-
-    #guldkorn_startsida_mobil {
+    #guldkorn_startsida {
         grid-area: gu1;
     }
 
-
-    /*Denstinations mobil css */
+    /*Denstinations mobil*/
 
     #destinations_figure {
         grid-area: fi1;
@@ -273,34 +312,16 @@ footer {
         border: solid rgb(33, 80, 152);
     }
 
-
     #countries_mobil {
         grid-area: se2;
-    }
-
-    .destinations_text {
-        display: block;
-        padding-top: 2%;
-        padding-left: 5%;
-        padding-right: 3%;
     }
 
     #guldkorn_destinations_mobil {
         grid-area: gu2;
     }
 
-    .main_img_mobil {
-        width: 100vw;
-    }
 
-    .destinations_img {
-        display: block;
-        width: 80vw;
-        margin: auto;
-    }
-
-
-    /*Adventures mobil css */
+    /*Adventures mobil*/
     #img_adventures_mobil {
         grid-area: fi2;
     }
@@ -313,16 +334,12 @@ footer {
         padding-right: 3%;
     }
 
-    .adventures_img {
-        width: 50vw;
-    }
-
     #guldkorn_adventures_mobil {
         grid-area: gu3;
     }
 
 
-    /*Before trip mobil css */
+    /*Before trip mobil*/
     #header_before_trip {
         grid-area: he3;
         margin: 4px;
@@ -349,15 +366,7 @@ footer {
         color: rgb(33, 80, 152);
     }
 
-    .before_trip_caption {
-        text-align: left;
-    }
-
-    .before_trip_text {
-        padding: 3%;
-    }
-
-    /*Questions mobil css */
+    /*Questions mobil*/
 
     #img_questions_mobil {
         grid-area: fi3;
@@ -375,7 +384,110 @@ footer {
         padding: 6%;
     }
 
-    .questions_img {
-        width: 100vw;
+
+}
+
+
+@media screen and (min-width: 479px) {
+    .wrapper_startsida {
+        display: grid;
+        grid-template-areas: 
+        'nav'
+        'se1'
+        'ar1'
+        'gu1'
+        'fot' 
+        ;
+        grid-template-columns: 100vw;
+        grid-template-rows: 10vh, 40vh, 10vh, 50vh, 30vh, 20vh;
     }
+
+    .wrapper_destintions {
+        display: grid;
+        grid-template-areas: 
+        'nav'
+        'fi1'
+        'se2'
+        'gu2'
+        'fot' 
+        ;
+        grid-template-columns: 100vw;
+        grid-template-rows: 10vh, 30vh, 75vh, 30vh, 20vh;
+    }
+
+    .wrapper_adventures {
+        display: grid;
+        grid-template-areas: 
+        'nav nav nav nav nav'
+        'fi2 fi2 fi2 fi2 fi2'
+        'fi3 ar2 ar2 ar2 ar2'
+        'fi4 ar3 ar3 ar3 ar3'
+        'fi5 ar4 ar4 ar4 ar4'
+        'fi6 ar5 ar5 ar5 ar5'
+        'fi7 ar6 ar6 ar6 ar6'
+        'fi8 ar7 ar7 ar7 ar7'
+        'gu3 gu3 gu3 gu3 gu3'
+        'fot fot fot fot fot' 
+        ;
+        grid-template-columns: repeat(20vw, 5);
+        grid-template-rows: 10vh, 30vh, 30vh, 30vh, 30vh, 30vh, 30vh, 30vh, 30vh, 20vh;
+    }
+
+    .wrapper_before_trip {
+        display: grid;
+        grid-template-areas: 
+        'nav nav nav nav nav'
+        'se3 ar8 ar8 ar9 ar9'
+        'se4 se4 se4 se4 se4'
+        'fot fot fot fot fot' 
+        ;
+        grid-template-columns: repeat(20vw, 5);
+        grid-template-rows: 10vh, 60vh, 30vh, 20vh;
+    }
+
+    .wrapper_questions {
+        display: grid;
+        grid-template-areas: 
+        'nav nav nav nav nav'
+        'art art art art art'
+        'gu4 gu4 gu4 gu4 gu4'
+        'fot fot fot fot fot' 
+        ;
+        grid-template-columns: repeat(20vw, 5);
+        grid-template-rows: 10vh, 60vh, 30vh, 20vh;
+    }
+
+    /* För alla sidor dator*/
+
+    #voyage_mobil {
+        display: none;
+    }
+
+    .menu_mobil {
+        display: none;
+    }
+
+    #voyage_dator {
+        grid-area: nav;
+        display: inline-flex;
+        background-color: rgb(33, 80, 152);
+        align-content: space-between;
+    }
+
+    /*Startsida dator*/
+
+    #bildspel {
+        grid-area: se1;
+    }
+
+    #welcome {
+        grid-area: ar1;
+    }
+
+    #guldkorn_startsida {
+        grid-area: gu1;
+    }
+
+
+
 }
