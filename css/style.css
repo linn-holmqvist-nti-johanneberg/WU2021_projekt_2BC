@@ -231,9 +231,23 @@ footer {
         grid-area: se1;
     }
 
-    #bildlayout {
+    .bildlayout {
         width: 100vw;
+        height: 75vw;
     }
+
+    #bildspel {
+        width: 100vw;
+        position: relative;
+        margin: auto;
+    }
+
+    .slides_imgs {
+        display: none;
+    }
+
+
+
 
     #welcome {
         grid-area: ar1;
@@ -246,8 +260,6 @@ footer {
     #guldkorn_startsida_mobil {
         grid-area: gu1;
     }
-
-
 
 
     /*Denstinations mobil css */
@@ -310,7 +322,6 @@ footer {
     }
 
 
-
     /*Before trip mobil css */
     #header_before_trip {
         grid-area: he3;
@@ -364,8 +375,7 @@ footer {
         padding: 6%;
     }
 
-}
-/*Radera css MEN OCKSÅ TILLHÖRANDE HTML */
-.img_hej {
-    width: 100vw;
+    .questions_img {
+        width: 100vw;
+    }
 }
