@@ -40,8 +40,6 @@ h4 {
     padding-left: 5px;
 }   
 
-
-
 footer {
     background-color: rgb(33, 80, 152);
     color: white;
@@ -50,9 +48,8 @@ footer {
 
 .social_icons {
     display: flex;
-    width: 35px;
     height: auto;
-    border-radius: 25px;
+    border-radius: 25%;
     margin-bottom: 2px;
     margin-top: 2px;
     padding-bottom: 1%;
@@ -122,15 +119,15 @@ footer {
     .wrapper_startsida {
         display: grid;
         grid-template-areas: 
-        'nav'
-        'se1'
-        'ar1'
-        'gu1'
-        'fot' 
-        'fet'
+        'nav nav'
+        'se1 se1'
+        'ar1 ar1'
+        'gu1 gu1'
+        'fot fot' 
+        'fet fet'
         ;
-        grid-template-columns: 100vw;
-        grid-template-rows: 13vh 45vh 90vh 55vh 30vh 40vh;
+        grid-template-columns: 20vw 80vw;
+        grid-template-rows: 13vh auto 75vh 50vh 27vh auto;
     }
 
     .wrapper_destinations {
@@ -145,7 +142,8 @@ footer {
         'fet'
         ;
         grid-template-columns: 100vw;
-        grid-template-rows: 13vh auto 10vh 425vh 55vh 30vh 60vh;
+        grid-template-rows: 13vh auto 10vh 345vh 45vh 27vh 48vh;
+        color: rgb(33, 80, 152);
     }
 
     .wrapper_adventures {
@@ -172,7 +170,7 @@ footer {
         'fet'
         ;
         grid-template-columns: 100vw;
-        grid-template-rows: 13vh auto 10vh 40vh auto 30vh auto 25vh auto 23vh auto 40vh auto 30vh auto 35vh 63vh 30vh 40vh;
+        grid-template-rows: 13vh auto 16vh 35vh auto 25vh auto 20vh auto 18vh auto 35vh auto 27vh auto 28vh 50vh 27vh 48vh;
     }
 
     .wrapper_before_trip {
@@ -188,7 +186,7 @@ footer {
         'fet'
         ;
         grid-template-columns: 100vw;
-        grid-template-rows: 13vh 10vh 90vh 40vh 55vh 120vh 30vh 40vh;
+        grid-template-rows: 13vh 10vh 75vh 35vh 50vh 85vh 27vh 48vh;
     }
 
     .wrapper_questions {
@@ -206,7 +204,7 @@ footer {
         'fet'
         ;
         grid-template-columns: 100vw;
-        grid-template-rows: 13vh auto 70vh 60vh 70vh 40vh 45vh 50vh 30vh 40vh;
+        grid-template-rows: 13vh auto 65vh 60vh 65vh 35vh 40vh 45vh 27vh 48vh;
     }
 
 
@@ -214,19 +212,27 @@ footer {
 
     #voyage_mobil {
         grid-area: nav;
-        display: inline-flex;
+        display: flex;
         background-color: rgb(33, 80, 152);
         width: 100vw;
         align-content: center;
         align-items: center;
         justify-content: space-around;
-        position: sticky;
-        z-index: 1000;
+        z-index: 5;     
+        position: fixed;
         top: 0;
+        margin: 0;
+        padding-top: 1vh;
+        height: 13vh;
     }
 
     #bar {
-        width: 50vw;
+        display: inline-flex;
+        width: 65vw;
+        align-content: center;
+        align-items: center;
+        justify-content: left;
+        font-size: 150%;
     }
 
     #voyage_dator {
@@ -236,19 +242,20 @@ footer {
     .menu_mobil {
         width: 70vw;
         height: 100vh;
-        position: fixed;
         top: 0;
         left: -90vw;
+        position: fixed;
         transition: left 0.3s;
         color: white;
+        font-size: 150%;
         box-shadow: 15px 0px 50px -10px rgba(0,0,0,0.75);
         z-index: 10;
-        padding-top: 60px;
+        padding-top: 13vh;
         padding-bottom: 30px;
+        padding-left: 5vw;
         background-image: url("/img/water.jpg");
         background-size: 150vh;
         background-repeat: no-repeat;
-        margin-top: 5vh;
     }
 
     .menu-button {
@@ -257,8 +264,9 @@ footer {
     }
 
     .menu-button i.material-icons {
-        font-size: 2.5rem;
+        font-size: 3rem;
         color: white;
+        width: 10vw;
     }
 
     .line {
@@ -277,8 +285,12 @@ footer {
 
     .clear_show {
         position: fixed;
-        left: 15px;
-        top: 25px;
+        left: 35px;
+        top: 40px;
+    }
+
+    #clear_icon {
+        font-size: 2.5rem;
     }
 
     .clear.visible {
@@ -286,7 +298,7 @@ footer {
     }    
 
     #logga_mobil {
-        width: 80px;
+        width: 50px;
         margin: 0;
     }
 
@@ -332,15 +344,20 @@ footer {
         border: solid rgb(33, 80, 152);
     }
 
+    .social_icons {
+        width: 10vw;
+    }
     /* Startsida mobil*/
 
-    #welcome{
+    #welcome {
         grid-area: ar1;
     }
 
-    #bildspel{
+    #bildspel {
         grid-area: se1;
-        margin-top: 0;
+        margin: auto;
+        position: relative;
+        margin: 0;
     }
 
     #guldkorn_startsida {
@@ -510,7 +527,7 @@ footer {
         display: none;
     }
 
-    #img_questions {
+    #figure_questions {
         grid-area: fi3;
     }
 
@@ -587,7 +604,7 @@ footer {
         'fot fet' 
         ;
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 18vh auto 40vh 80vh 35vh;
+        grid-template-rows: 18vh auto 40vh 80vh auto;
     }
 
     .wrapper_destinations {
@@ -601,27 +618,28 @@ footer {
         'fot fet' 
         ;
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 18vh auto 15vh 830vh 70vh 35vh;
+        grid-template-rows: 18vh auto 15vh 850vh 70vh auto;
+        color: rgb(33, 80, 152);
     }
 
     .wrapper_adventures {
         display: grid;
         grid-template-areas: 
-        'nav nav nav nav nav nav nav nav nav nav'
-        'fi2 fi2 fi2 fi2 fi2 fi2 fi2 fi2 fi2 fi2'
-        'he5 he5 he5 he5 he5 he5 he5 he5 he5 he5'
-        'se5 se5 se5 se5 se5 se5 se5 se5 se5 se5'
-        'fi3 fi3 ar2 ar2 ar2 ar2 ar2 ar2 ar2 ar2'
-        'fi4 fi4 ar3 ar3 ar3 ar3 ar3 ar3 ar3 ar3'
-        'fi5 fi5 ar4 ar4 ar4 ar4 ar4 ar4 ar4 ar4'
-        'fi6 fi6 ar5 ar5 ar5 ar5 ar5 ar5 ar5 ar5'
-        'fi7 fi7 ar6 ar6 ar6 ar6 ar6 ar6 ar6 ar6'
-        'fi8 fi8 ar7 ar7 ar7 ar7 ar7 ar7 ar7 ar7'
-        'gu3 gu3 gu3 gu3 gu3 gu3 gu3 gu3 gu3 gu3'
-        'fot fot fot fot fet fet fet fet fet fet' 
+        'nav nav nav nav'
+        'fi2 fi2 fi2 fi2'
+        'he5 he5 he5 he5'
+        'se5 se5 se5 se5'
+        'ar2 ar2 fi3 fi3'
+        'fi4 fi4 ar3 ar3'
+        'ar4 ar4 fi5 fi5'
+        'fi6 fi6 ar5 ar5'
+        'ar7 ar7 fi8 fi8'        
+        'fi7 fi7 ar6 ar6'
+        'gu3 gu3 gu3 gu3'
+        'fot fot fet fet' 
         ;
-        grid-template-columns: 20vw 20vw repeat(8, 7.5vw);
-        grid-template-rows: 18vh auto 15vh 30vh 60vh 60vh 67vh 70vh 60vh 60vh 75vh 35vh;
+        grid-template-columns: 25vw 25vw 25vw 25vw;
+        grid-template-rows: 18vh auto 15vh 30vh auto 70vh 70vh auto auto auto 75vh auto;
     }
 
     .wrapper_before_trip {
@@ -634,7 +652,7 @@ footer {
         'fot fot fot fet fet fet' 
         ;
         grid-template-columns: 17vw 17vw 16vw 16vw 17vw 17vw;
-        grid-template-rows: 18vh 15vh 160vh 55vh 35vh;
+        grid-template-rows: 18vh 15vh 160vh 55vh auto;
         background-image: url("/img/background_view.jpg");
         background-size: cover;
     }
@@ -652,7 +670,7 @@ footer {
         'fot fot fet fet' 
         ;
         grid-template-columns: repeat(4, 25vw);
-        grid-template-rows: 18vh 25vh auto auto 60vh 55vh 70vh 35vh;
+        grid-template-rows: 18vh 25vh auto auto 60vh 55vh 70vh auto;
     }
 
     /* För alla sidor dator*/
@@ -693,10 +711,24 @@ footer {
 
     .footer1 {
         grid-area: fot;
+        padding-top: 5vh;
+        line-height: 1.6;
+        padding-left: 3vw;
+    }
+
+    .icons_line {
+        line-height: 4;
     }
 
     .footer2 {
         grid-area: fet;
+        padding-top: 5vh;
+        line-height: 1.6;
+        padding-right: 4vw;
+    }
+
+    .social_icons {
+        width: 3vw;
     }
 
     .main_img {
@@ -815,66 +847,120 @@ footer {
         margin-right: 15vw;
     }
 
-    .adventures_img {
-        width: 40vw;
-        height: auto;
-        padding-left: 2vw;
-    }
-
     #img_adventures1 {
         grid-area: fi3; 
+        background-color: rgb(33, 80, 152);
+        padding-left: 5vw;
+        padding-top: 0.5vh;
+    }
+
+    #adventures_img1 {
+        width: 45vw;
     }
 
     #img_adventures2 {
         grid-area: fi4; 
+        padding-top: 7vh;
+        padding-left: 3vw;
+    }
+
+    #adventures_img2 {
+        width: 40vw;
     }
 
     #img_adventures3 {
         grid-area: fi5; 
+        padding-left: 13vw;
+        padding-top: 6vw;
+        border-top: solid rgb(33, 80, 152);
+    }
+
+    #adventures_img3 {
+        width: 30vw;
     }
 
     #img_adventures4 {
         grid-area: fi6; 
+        background-color: rgb(33, 80, 152);
+        padding-left: 2vw;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+    }
+
+    #adventures_img4 {
+        width: 50vw;
     }
 
     #img_adventures5 {
         grid-area: fi7; 
+        background-color: rgb(33, 80, 152);
+        padding-left: 13vw;
+        padding-right: 3vw;
+        padding-top: 15vh;
+        padding-bottom: 15vh;
+    }
+
+    #adventures_img5 {
+        width: 30vw;
     }
 
     #img_adventures6 {
-        grid-area: fi8; 
+        grid-area: fi8;
+        padding-top: 5vh; 
+        padding-bottom: 5vh;
     }
 
-    .article_adventures {
-        color: rgb(33, 80, 152);
-        padding-top: 2%;
-        padding-left: 5%;
-        padding-right: 3%;
+    #adventures_img6 {
+        width: 50vw;
     }
 
 
     #article_adventures1 {
         grid-area: ar2;
+        background-color: rgb(33, 80, 152);
+        color: white;
+        padding-top: 3vh;
+        padding-left: 5vw;
     }
 
     #article_adventures2 {
         grid-area: ar3;
+        color: rgb(33, 80, 152);
+        padding-top: 12vh;
+        padding-right: 5vw;
     }
 
     #article_adventures3 {
         grid-area: ar4;
+        color: rgb(33, 80, 152);
+        padding-left: 3vw;
+        padding-top: 15vh;        
+        border-top: solid rgb(33, 80, 152);
     }
 
     #article_adventures4 {
         grid-area: ar5;
+        background-color: rgb(33, 80, 152);
+        color: white;
+        padding-left: 10vw;
+        padding-right: 6vw;
+        padding-top: 13vh;
     }
 
     #article_adventures5 {
         grid-area: ar6;
+        background-color: rgb(33, 80, 152);
+        color: white;
+        padding-right: 7vw;
+        padding-top: 8vh;
     }
 
     #article_adventures6 {
         grid-area: ar7;
+        color: rgb(33, 80, 152);
+        padding-left: 7vw;
+        padding-right: 3vw;
+        padding-top: 8vh;
     }
 
 
@@ -1006,6 +1092,7 @@ footer {
         background: rgb(33, 80, 152);
         color: white;   
         padding-top: 5vh;
+        padding-right: 10vw;
     }    
     
     #white_heder {
