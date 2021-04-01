@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,30 +10,33 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
+
 <body>
-    
+
 
     <div class="wrapper_questions">
         <div class="menu_mobil">
             <div class="clear">
-                    <i class="material-icons">clear_alt</i>
+                <i class="material-icons">clear_alt</i>
             </div>
-                <ul>
-                    <li class="line"><a href="index.html" class="link">Hem</a></li>
-                    <li class="line"><a href="destinations.html" class="link">Destinationer</a></li>                
-                    <li class="line"><a href="adventures.html" class="link">Äventyr</a></li>
-                    <li class="line"><a href="before_trip.html" class="link">Innan resan</a></li>
-                    <li class="line"><a href="questions.html" class="link">Frågor & Svar</a></li>
-                </ul>
-        </div>  
-        
-        <nav class="voyage_mobil">
+            <ul>
+                <li class="line"><a href="index.html" class="link">Hem</a></li>
+                <li class="line"><a href="destinations.html" class="link">Destinationer</a></li>
+                <li class="line"><a href="adventures.html" class="link">Äventyr</a></li>
+                <li class="line"><a href="before_trip.html" class="link">Innan resan</a></li>
+                <li class="line"><a href="questions.html" class="link">Frågor & Svar</a></li>
+            </ul>
+        </div>
+
+        <nav id="voyage_mobil">
             <div class="menu-button">
                 <i class="material-icons">menu_alt</i>
             </div>
             <a href="index.html" class="link">
                 <img src="/img/the_globe_mobil.png" alt="Voyage!" id="logga_mobil">
-                <p>Voyage!</p>
+            </a>
+            <a href="index.html" class="link">
+                <p><em>Voyage!</em></p>
             </a>
         </nav>
 
@@ -42,116 +46,172 @@
                     <img src="img/the_globe_dator.png" alt="Voyage!" id="logga_dator">
                 </a>
             </div>
-            <a href="destinations.html" class="link"><p>Destinationer</p></a>
-            <a href="adventures.html" class="link"><p>Äventyr</p></a>
-            <a href="before_trip.html" class="link"><p>Innan resan</p></a>
-            <a href="questions.html" class="link"><p>Frågor & Svar</p></a>
+            <a href="destinations.html" class="link">
+                <p>Destinationer</p>
+            </a>
+            <a href="adventures.html" class="link">
+                <p>Äventyr</p>
+            </a>
+            <a href="before_trip.html" class="link">
+                <p>Innan resan</p>
+            </a>
+            <a href="questions.html" class="dark_link">
+                <p>Frågor & Svar</p>
+            </a>
 
         </nav>
 
 
-        <figure id="img_questions_mobil">
-            <img class="questions_img" src="/img/fragor_svar.jpg" alt="Frågor och svar">
+        <figure id="figure_questions">
+            <img src="/img/fragor_svar.jpg" alt="Frågor och svar" id="questions_img">
         </figure>
-        
-        
-        <article id="the_questions">
-            <br>
-            <br>
-            <h2>Vad gör jag om jag tappar passet utomlands?</h2>
-            <p class="text_questions"> 
-                <strong>Svar:</strong>
-                Om du tappar bort eller blir bestulen på ditt svenska pass i utlandet ska du kontakta svenska ambassaden eller konsulatet där 
-                du befinner dig, där kan du få hjälp med att få ett provisoriskt pass. Det underlättar om du har kopierat bildsidan av ditt 
-                pass och förvarar dessa på olika ställen till exempel i lilla väskan, i pengbältet, en kopia hemma osv. Du ska även 
-                förlustanmäla passet hos polisen. Glöm inte att spara kvitton och rapporter till försäkringsbolaget.
-            </p>
 
-            <br>
-            <h2>Vart åker de flesta nybörjar backpackers?</h2>
-            <p class="text_questions"> 
+        <header id="header_questions">
+            <h1>Questions</h1>
+        </header>
+
+        <figure id="figure_questions1">
+            <img src="img/passport.jpg" alt="Passport"  class="img_questions_side">
+        </figure>
+
+        <figure id="figure_questions2">
+            <img src="img/bankok.jpg" alt="Bangkok" class="img_questions_side">
+        </figure>
+
+        <article class="the_questions" id="question1">
+            <h2 class="questions">Vart åker de flesta nybörjar backpackers?</h2>
+            <p class="text_questions">
+                <br>
                 <strong>Svar:</strong>
-                De flesta väljer att åka till Sydostasien och börja sin backpacking där. 
-                De allra flesta börjar i Bangkok. Det är lagom exotiskt och billigt i Sydostasien. 
+                De flesta väljer att åka till Sydostasien och börja sin backpacking där.
+                De allra flesta börjar i Bangkok. Det är lagom exotiskt och billigt i Sydostasien.
                 Många andra väljer istället att åka till Oceanien och mellanlandar i Asien på vägen dit eller hem.
-            </p>
 
+                <br>
+                <br>
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus delectus praesentium officia quibusdam sint assumenda libero laudantium nihil nulla, velit labore obcaecati, atque vitae maxime possimus sapiente at tempora dolore expedita quidem nobis! Fugiat, eos a sit dolores laboriosam omnis.
+            </p>
+        </article>
+
+        <article class="the_questions" id="question2">
+            <h2 class="questions" id="white_head">Vad gör jag om jag tappar passet utomlands?</h2>
             <br>
-            <h2>Hur kan man resa billigt?</h2>
             <p class="text_questions">
                 <strong>Svar:</strong>
-                Beroende på vart i världen du ska resa så kan du leva billigt på olika sätt. Kan du laga mat på rummet eller i ett gemensamt 
-                kök brukar det vara ett sätt att leva billigare.  Billigast och framförallt trevligast är att äta mat från de lokala matstånden.
-                Det "klassiska" backpacker-tricket är att åka nattág/buss och dá spara in pengar för den natten du reser. Många hostels 
-                erbjuder veckopriser som brukar vara prisvärda. Andra hostels kan erbjuda gratis boende mot att du åtar dig att städa någon 
-                timme per dag. Tänk över vad du lägger pengar pá, finns det kanske billigare alternativ. Det kan handla om ett par kronor men 
-                i längden blir det pengar av det. 
-            </p>
+                Om du tappar bort eller blir bestulen på ditt svenska pass i utlandet ska du kontakta svenska ambassaden
+                eller konsulatet där
+                du befinner dig, där kan du få hjälp med att få ett provisoriskt pass. Det underlättar om du har
+                kopierat bildsidan av ditt
+                pass och förvarar dessa på olika ställen till exempel i lilla väskan, i pengbältet, en kopia hemma osv.
+                Du ska även
+                förlustanmäla passet hos polisen. Glöm inte att spara kvitton och rapporter till försäkringsbolaget.
 
-            <br>
-            <h2>När på året är det bäst att åka?</h2>
+            </p>
+        </article>
+
+
+        <article class="the_questions" id="question4">
+            <h2 class="questions" id="white_heder">Vad kan man göra för att resa billigt?</h2>
             <p class="text_questions">
+                <br>
                 <strong>Svar:</strong>
-                Det beror på vart i världen man ska backpacka. De flesta väljer att byta hösten och vintern i Sverige mot vår och sommar i 
+                Beroende på vart i världen du ska resa så kan du leva billigt på olika sätt. Kan du laga mat på rummet
+                eller i ett gemensamt
+                kök brukar det vara ett sätt att leva billigare. Billigast och framförallt trevligast är att äta mat
+                från de lokala matstånden.
+                Det "klassiska" backpacker-tricket är att åka nattág/buss och dá spara in pengar för den natten du
+                reser. Många hostels
+                erbjuder veckopriser som brukar vara prisvärda. Andra hostels kan erbjuda gratis boende mot att du åtar
+                dig att städa någon
+                timme per dag. Tänk över vad du lägger pengar pá, finns det kanske billigare alternativ. Det kan handla
+                om ett par kronor men
+                i längden blir det pengar av det.
+            </p>
+        </article>
+
+        <article class="the_questions" id="question5">
+            <h2 class="questions">När på året är det bäst att åka?</h2>
+            <p class="text_questions">
+                <br>
+                <strong>Svar:</strong>
+                Det beror på vart i världen man ska backpacka. De flesta väljer att byta hösten och vintern i Sverige
+                mot vår och sommar i
                 Asien och Oceanien. De flesta väljer då att åka runt oktober månad.
             </p>
+        </article>
 
-            <br>
-            <h2>När är det billigast att boka flyg?</h2>
-            <p class="text_questions"> 
+        <article class="the_questions" id="question6">
+            <h2 class="questions">När är det billigast att boka flyg?</h2>
+            <p class="text_questions">
+                <br>
                 <strong>Svar:</strong>
-                För att få bästa priset på ett flyg, försök att boka flyget 2-3 månader i förväg. Ibland kan det även vara billigare att boka
-                i närheten av vart du ska och sedan åka buss/tåg sista biten. Däremot ska det finnas rimliga gränser, åk inte fem timmar 
+                För att få bästa priset på ett flyg, försök att boka flyget 2-3 månader i förväg. Ibland kan det även
+                vara billigare att boka
+                i närheten av vart du ska och sedan åka buss/tåg sista biten. Däremot ska det finnas rimliga gränser, åk
+                inte fem timmar
                 istället för en för att tjäna in 1000 kr.
             </p>
         </article>
 
 
-        <section id="guldkorn_questions_mobil" class="guldkorn" class="guldkorn_mobil"> 
+        <section id="guldkorn_questions" class="guldkorn">
             <h3>Guldkorn</h3>
             <br>
             <img class="guldkorn_img" src="img/grand_cayon.jpg" alt="Grand Canyon">
             <p class="guldkorn_places">Grand Canyon, USA</p>
             <p class="guldkorn_info">
-                Grand Canyon är ett av naturens egna mästerverk. Detta mäktiga eroderande ökenlandskap finns i nordvästra Arizona. 
+                Grand Canyon är ett av naturens egna mästerverk. Detta mäktiga eroderande ökenlandskap finns i
+                nordvästra Arizona.
                 Den branta klyftan, huggen av Colorado River är en helt oförglömlig syn.
             </p>
             <br>
         </section>
-        
-        
-        <footer class="footer_mobil">
+
+
+        <footer class="footer1" class="footer_mobil">
             <p class="footer_headline">
                 Besök oss på våra sociala medier:
             </p>
 
             <div class="icons_line">
-                <a href="https://www.instagram.com/"><img class="social_icons" src="/img/instagram.jpg" alt="Instagram logga"></a>
+                <a href="https://www.instagram.com/"><img class="social_icons" src="/img/instagram.jpg"
+                        alt="Instagram logga"></a>
                 <a href="https://www.instagram.com/" class="link">Instagram</a>
                 <br>
             </div>
 
             <div class="icons_line">
-                <a href="https://sv-se.facebook.com/"><img class="social_icons" src="/img/facebook.jpg" alt="Facebook logga"></a>
+                <a href="https://sv-se.facebook.com/"><img class="social_icons" src="/img/facebook.jpg"
+                        alt="Facebook logga"></a>
                 <a href="https://sv-se.facebook.com/" class="link">Facebook</a>
                 <br>
             </div>
 
             <div class="icons_line">
-                <a href="https://mobile.twitter.com/?lang=sv"><img class="social_icons" src="/img/twitter.jpg" alt="Twitter logga"></a>
+                <a href="https://mobile.twitter.com/?lang=sv"><img class="social_icons" src="/img/twitter.jpg"
+                        alt="Twitter logga"></a>
                 <a href="https://mobile.twitter.com/?lang=sv" class="link">Twitter</a>
                 <br>
             </div>
             <br>
             <br>
+        </footer>
 
+        <footer class="footer2">
             <p class="footer_headline">
                 Om oss:
             </p>
             <p>
-                Hemsidan är skapad av några backpackers som med hjälp och lärdom från många andra backapckers satt ihop en hemsida 
-                till dig som ska ut och resa. Tanken var att den skulle fungera som ett komplement eller reseinsperation för den 
+                Hemsidan är skapad av några backpackers som med hjälp och lärdom från många andra backapckers satt ihop
+                en hemsida
+                till dig som ska ut och resa. Tanken var att den skulle fungera som ett komplement eller reseinsperation
+                för den
                 resande, som finns förpackad i mobilen.
+                <br>
+                <br>
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, totam necessitatibus atque ipsa sed nisi odio! Tempore perferendis asperiores reprehenderit!
             </p>
             <br>
             <br>
@@ -161,4 +221,5 @@
 
     <script src="/js/main.js"></script>
 </body>
+
 </html>

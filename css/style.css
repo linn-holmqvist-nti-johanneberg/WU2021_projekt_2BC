@@ -12,7 +12,8 @@ h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     color: rgb(33, 80, 152);
-    padding-top: 2vw;
+    padding-top: 1vh;
+    font-size: 5vh;
 }
 
 h2 {
@@ -23,8 +24,7 @@ h2 {
 
 h3 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    padding-top: 2vw;
+    padding-top: 2vh;
     font-size: 25px;
 }
 
@@ -37,17 +37,12 @@ h4 {
     color: white;
     text-decoration: none;
     font-family: sans-serif;
+    padding-left: 5px;
 }   
 
-.guldkorn {
-    background-color: rgb(241, 238, 221);
-    color: rgb(33, 80, 152);
-    padding: 2%;
-}    
 
 
 footer {
-    grid-area: fot;
     background-color: rgb(33, 80, 152);
     color: white;
     padding: 2%;
@@ -55,7 +50,7 @@ footer {
 
 .social_icons {
     display: flex;
-    width: 7vw;
+    width: 35px;
     height: auto;
     border-radius: 25px;
     margin-bottom: 2px;
@@ -75,7 +70,6 @@ footer {
 
 /*Startsida*/
 #bildspel {
-    grid-area: se1;
     width: 100vw;
     position: relative;
     margin: auto;
@@ -91,8 +85,6 @@ footer {
 }
 
 #welcome {
-    grid-area: ar1;
-    padding-top: 1vh;
     padding-left: 5vw;
     padding-right: 2vw;
     font-family: sans-serif;
@@ -108,7 +100,7 @@ footer {
     padding-right: 3%;
 }
 
-.main_img_mobil {
+.main_img {
     width: 100vw;
 }
 
@@ -118,26 +110,12 @@ footer {
     margin: auto;
 }
 
-/*Adventures*/
-
-.adventures_img {
-    width: 50vw;
-}
-
 
 /*Before trip*/
 .before_trip_caption {
     text-align: left;
 }
 
-.before_trip_text {
-    padding: 3%;
-}
-
-/*Questions*/
-.questions_img {
-    width: 100vw;
-}
 
 @media screen and (max-width: 479px) {
     /*Mobil grid*/
@@ -149,12 +127,13 @@ footer {
         'ar1'
         'gu1'
         'fot' 
+        'fet'
         ;
         grid-template-columns: 100vw;
-        grid-template-rows: 7vh, 30vh, 10vh, 150vh, 80vh, 40vh;
+        grid-template-rows: 13vh 45vh 90vh 55vh 30vh 40vh;
     }
 
-    .wrapper_destination {
+    .wrapper_destinations {
         display: grid;
         grid-template-areas: 
         'nav'
@@ -163,9 +142,10 @@ footer {
         'se2'
         'gu2'
         'fot'
+        'fet'
         ;
         grid-template-columns: 100vw;
-        grid-template-rows: 7vh, 30vh, 10vh, 100vh, 80vh, 40vh;
+        grid-template-rows: 13vh auto 10vh 425vh 55vh 30vh 60vh;
     }
 
     .wrapper_adventures {
@@ -173,12 +153,26 @@ footer {
         grid-template-areas: 
         'nav'
         'fi2'
+        'he5'
+        'se5'
+        'fi4'
         'ar2'
+        'fi5'
+        'ar7'
+        'fi6'
+        'ar8'
+        'fi7'
+        'ar9'
+        'fi8'        
+        'mo1'
+        'fi9'
+        'mo2'
         'gu3'
         'fot'
+        'fet'
         ;
         grid-template-columns: 100vw;
-        grid-template-rows: 7vh, 40vh, 300vh, 80vh, 40vh;
+        grid-template-rows: 13vh auto 10vh 40vh auto 30vh auto 25vh auto 23vh auto 40vh auto 30vh auto 35vh 63vh 30vh 40vh;
     }
 
     .wrapper_before_trip {
@@ -191,9 +185,10 @@ footer {
         'ar5'
         'se3'
         'fot'
+        'fet'
         ;
         grid-template-columns: 100vw;
-        grid-template-rows: 7vh, 10vh, 70vh, 70vh, 80vh, 50vh, 20vh;
+        grid-template-rows: 13vh 10vh 90vh 40vh 55vh 120vh 30vh 40vh;
     }
 
     .wrapper_questions {
@@ -202,11 +197,16 @@ footer {
         'nav'
         'fi3'
         'ar6'
+        'mo3'
+        'mo5'
+        'mo6'
+        'mo7'
         'gu4'
         'fot'
+        'fet'
         ;
         grid-template-columns: 100vw;
-        grid-template-rows: 7vh, 30vh, 250vh, 80vh, 40vh;
+        grid-template-rows: 13vh auto 70vh 60vh 70vh 40vh 45vh 50vh 30vh 40vh;
     }
 
 
@@ -214,9 +214,19 @@ footer {
 
     #voyage_mobil {
         grid-area: nav;
+        display: inline-flex;
         background-color: rgb(33, 80, 152);
-        display: flex;
         width: 100vw;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+        position: sticky;
+        z-index: 1000;
+        top: 0;
+    }
+
+    #bar {
+        width: 50vw;
     }
 
     #voyage_dator {
@@ -238,6 +248,7 @@ footer {
         background-image: url("/img/water.jpg");
         background-size: 150vh;
         background-repeat: no-repeat;
+        margin-top: 5vh;
     }
 
     .menu-button {
@@ -279,6 +290,16 @@ footer {
         margin: 0;
     }
 
+    h3 {
+        text-align: center;
+    }
+
+    .guldkorn {
+        background-color: rgb(241, 238, 221);
+        color: rgb(33, 80, 152);
+        padding: 2%;
+    }   
+
     .guldkorn_img {
         width: 50vw;
         padding-bottom: 2%;
@@ -295,7 +316,32 @@ footer {
         text-align: center;
     }
 
+    .guldkorn_dator {
+        display: none;
+    }
+
+    .footer1 {
+        grid-area: fot;
+        line-height: 1.5;
+        border: solid rgb(33, 80, 152);
+    }
+
+    .footer2 {
+        grid-area: fet;
+        line-height: 1.5;
+        border: solid rgb(33, 80, 152);
+    }
+
     /* Startsida mobil*/
+
+    #welcome{
+        grid-area: ar1;
+    }
+
+    #bildspel{
+        grid-area: se1;
+        margin-top: 0;
+    }
 
     #guldkorn_startsida {
         grid-area: gu1;
@@ -307,34 +353,118 @@ footer {
         grid-area: fi1;
     }
 
-    #header_destinations_mobil {
+    #header_destinations {
         grid-area: he2;
         border: solid rgb(33, 80, 152);
+        margin-bottom: 2vh;
     }
 
-    #countries_mobil {
+    #countries {
         grid-area: se2;
     }
 
-    #guldkorn_destinations_mobil {
+    #guldkorn_destinations {
         grid-area: gu2;
+    } 
+
+    #header_img_dator {
+        display: none;
     }
 
 
     /*Adventures mobil*/
-    #img_adventures_mobil {
-        grid-area: fi2;
+    #main_figure_adventures {
+        grid-area: fi2;  
     }
 
-    #adventures_text {
-        grid-area: ar2;
+    #main_img_adventures {
+        width: 100vw;
+    }
+
+    .adventures_img {
+        width: 50vw;
+    }
+
+    #header_adventures {
+        grid-area: he5;
+        border: solid rgb(33, 80, 152);
+        padding: 1%;
+    }
+
+    #inledning_adventures {
+        grid-area: se5;
+        margin-top: 2vh;
         color: rgb(33, 80, 152);
         padding-top: 2%;
         padding-left: 5%;
         padding-right: 3%;
     }
 
-    #guldkorn_adventures_mobil {
+    .for_computer_text {
+        display: none;
+    }
+    .img_adventures {
+        padding-top: 2%;
+        padding-left: 5%;
+        padding-right: 3%;
+    }
+
+    #img_adventures1 {
+        grid-area: fi4; 
+    }
+
+    #img_adventures2 {
+        grid-area: fi5; 
+    }    
+    
+    #img_adventures3 {
+        grid-area: fi6; 
+    }    
+    
+    #img_adventures4 {
+        grid-area: fi7; 
+    }
+
+    #img_adventures5 {
+        grid-area: fi8;
+    }
+
+    #img_adventures6 {
+        grid-area: fi9;
+    }
+
+    #article_adventures1 {
+        grid-area: ar2;
+    }
+
+    #article_adventures2 {
+        grid-area: ar7;
+    }    
+    
+    #article_adventures3 {
+        grid-area: ar8;
+    }    
+
+    #article_adventures4 {
+        grid-area: ar9;
+    }
+
+    #article_adventures5 {
+        grid-area: mo1;
+    }
+
+    #article_adventures6 {
+        grid-area: mo2;
+    }
+
+    .article_adventures {
+        color: rgb(33, 80, 152);
+        padding-top: 2%;
+        padding-left: 5%;
+        padding-right: 3%;
+    }
+
+    #guldkorn_adventures {
         grid-area: gu3;
     }
 
@@ -346,37 +476,85 @@ footer {
         border: solid rgb(33, 80, 152);
     }
 
+    .before_trip_text {
+        padding: 3%;
+    }
+
     #take_with {
         grid-area: ar3;
         color: rgb(33, 80, 152);
+        padding-top: 3vh;
     }
 
     #dont_take_with {
+        padding-top: 3vh;
         grid-area: ar4;
         color: rgb(33, 80, 152);
     }
 
     #remeber {
+        padding-top: 3vh;
         grid-area: ar5;
         color: rgb(33, 80, 152);
     }
 
     #backpack {
+        padding-top: 3vh;
         grid-area: se3;
         color: rgb(33, 80, 152);
     }
 
     /*Questions mobil*/
 
-    #img_questions_mobil {
+    #header_questions {
+        display: none;
+    }
+
+    #img_questions {
         grid-area: fi3;
     }
 
-    #the_questions {
+    #question1 {
         grid-area: ar6; 
+        padding-top: 5vh;
+        border: solid rgb(33, 80, 152);
+        margin: 1%;
+        margin-bottom: 5vh;
     }
 
-    #guldkorn_questions_mobil {
+    #question2 {
+        grid-area: mo3; 
+        padding-top: 5vh;
+        border: solid rgb(33, 80, 152);
+        margin: 1%;
+        margin-bottom: 5vh;
+    }
+
+    #question4 {
+        grid-area: mo5; 
+        padding-top: 5vh;
+        border: solid rgb(33, 80, 152);
+        margin: 1%;
+        margin-bottom: 5vh;
+    }
+
+    #question5 {
+        grid-area: mo6; 
+        padding-top: 5vh;
+        border: solid rgb(33, 80, 152);
+        margin: 1%;        
+        margin-bottom: 5vh;
+    }
+
+    #question6 {
+        grid-area: mo7; 
+        padding-top: 5vh;
+        border: solid rgb(33, 80, 152);
+        margin: 1%;
+        margin-bottom: 5vh;
+    } 
+
+    #guldkorn_questions {
         grid-area: gu4;
     }
 
@@ -384,7 +562,17 @@ footer {
         padding: 6%;
     }
 
+    #questions_img {
+        width: 100vw;
+    }
 
+    #figure_questions1 {
+        display: none;
+    }
+
+    #figure_questions2 {
+        display: none;
+    }
 }
 
 
@@ -392,69 +580,79 @@ footer {
     .wrapper_startsida {
         display: grid;
         grid-template-areas: 
-        'nav'
-        'se1'
-        'ar1'
-        'gu1'
-        'fot' 
+        'nav nav'
+        'se1 se1'
+        'ar1 ar1'
+        'gu1 gu1'
+        'fot fet' 
         ;
-        grid-template-columns: 100vw;
-        grid-template-rows: 10vh, 40vh, 10vh, 50vh, 30vh, 20vh;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 18vh auto 40vh 80vh 35vh;
     }
 
-    .wrapper_destintions {
+    .wrapper_destinations {
         display: grid;
         grid-template-areas: 
-        'nav'
-        'fi1'
-        'se2'
-        'gu2'
-        'fot' 
+        'nav nav'
+        'fi1 fi1'
+        'he4 he4'
+        'se2 se2'
+        'gu2 gu2'
+        'fot fet' 
         ;
-        grid-template-columns: 100vw;
-        grid-template-rows: 10vh, 30vh, 75vh, 30vh, 20vh;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 18vh auto 15vh 830vh 70vh 35vh;
     }
 
     .wrapper_adventures {
         display: grid;
         grid-template-areas: 
-        'nav nav nav nav nav'
-        'fi2 fi2 fi2 fi2 fi2'
-        'fi3 ar2 ar2 ar2 ar2'
-        'fi4 ar3 ar3 ar3 ar3'
-        'fi5 ar4 ar4 ar4 ar4'
-        'fi6 ar5 ar5 ar5 ar5'
-        'fi7 ar6 ar6 ar6 ar6'
-        'fi8 ar7 ar7 ar7 ar7'
-        'gu3 gu3 gu3 gu3 gu3'
-        'fot fot fot fot fot' 
+        'nav nav nav nav nav nav nav nav nav nav'
+        'fi2 fi2 fi2 fi2 fi2 fi2 fi2 fi2 fi2 fi2'
+        'he5 he5 he5 he5 he5 he5 he5 he5 he5 he5'
+        'se5 se5 se5 se5 se5 se5 se5 se5 se5 se5'
+        'fi3 fi3 ar2 ar2 ar2 ar2 ar2 ar2 ar2 ar2'
+        'fi4 fi4 ar3 ar3 ar3 ar3 ar3 ar3 ar3 ar3'
+        'fi5 fi5 ar4 ar4 ar4 ar4 ar4 ar4 ar4 ar4'
+        'fi6 fi6 ar5 ar5 ar5 ar5 ar5 ar5 ar5 ar5'
+        'fi7 fi7 ar6 ar6 ar6 ar6 ar6 ar6 ar6 ar6'
+        'fi8 fi8 ar7 ar7 ar7 ar7 ar7 ar7 ar7 ar7'
+        'gu3 gu3 gu3 gu3 gu3 gu3 gu3 gu3 gu3 gu3'
+        'fot fot fot fot fet fet fet fet fet fet' 
         ;
-        grid-template-columns: repeat(20vw, 5);
-        grid-template-rows: 10vh, 30vh, 30vh, 30vh, 30vh, 30vh, 30vh, 30vh, 30vh, 20vh;
+        grid-template-columns: 20vw 20vw repeat(8, 7.5vw);
+        grid-template-rows: 18vh auto 15vh 30vh 60vh 60vh 67vh 70vh 60vh 60vh 75vh 35vh;
     }
 
     .wrapper_before_trip {
         display: grid;
         grid-template-areas: 
-        'nav nav nav nav nav'
-        'se3 ar8 ar8 ar9 ar9'
-        'se4 se4 se4 se4 se4'
-        'fot fot fot fot fot' 
+        'nav nav nav nav nav nav'
+        'he6 he6 he6 he6 he6 he6'
+        'se3 se3 ar8 ar8 ar9 ar9'
+        'se4 se4 se4 se4 se4 se4'
+        'fot fot fot fet fet fet' 
         ;
-        grid-template-columns: repeat(20vw, 5);
-        grid-template-rows: 10vh, 60vh, 30vh, 20vh;
+        grid-template-columns: 17vw 17vw 16vw 16vw 17vw 17vw;
+        grid-template-rows: 18vh 15vh 160vh 55vh 35vh;
+        background-image: url("/img/background_view.jpg");
+        background-size: cover;
     }
 
     .wrapper_questions {
         display: grid;
         grid-template-areas: 
-        'nav nav nav nav nav'
-        'art art art art art'
-        'gu4 gu4 gu4 gu4 gu4'
-        'fot fot fot fot fot' 
+        'nav nav nav nav'
+        'he7 he7 he7 he7'
+        'fi9 fi9 mo2 mo2'
+        'mo1 mo1 mo7 mo7'
+        'mo4 mo4 mo4 mo4'
+        'mo5 mo5 mo6 mo6'
+        'gu4 gu4 gu4 gu4'
+        'fot fot fet fet' 
         ;
-        grid-template-columns: repeat(20vw, 5);
-        grid-template-rows: 10vh, 60vh, 30vh, 20vh;
+        grid-template-columns: repeat(4, 25vw);
+        grid-template-rows: 18vh 25vh auto auto 60vh 55vh 70vh 35vh;
     }
 
     /* För alla sidor dator*/
@@ -470,14 +668,59 @@ footer {
     #voyage_dator {
         grid-area: nav;
         display: inline-flex;
+        width: 100vw;
         background-color: rgb(33, 80, 152);
         align-content: space-between;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 20px;
+        position: sticky;
+        z-index: 1000;
+        top: 0;
+    }
+
+    .link :hover {
+        color: rgb(201, 201, 201);
+    }
+
+    .dark_link {
+        color: white
+    }
+
+    #logga_dator {
+        width: 9vw;
+    }
+
+    .footer1 {
+        grid-area: fot;
+    }
+
+    .footer2 {
+        grid-area: fet;
+    }
+
+    .main_img {
+        display: block;
+        width: 46vw;
+        margin: auto;
+        padding-top: 2vh;
     }
 
     /*Startsida dator*/
 
     #bildspel {
         grid-area: se1;
+        position: relative;
+        text-align: center;
+        margin-top: 2vw;
+    }
+
+
+    .bildlayout {
+        width: auto;
+        height: 70vh;
+        border-radius: 3px;
+        margin: 0;
     }
 
     #welcome {
@@ -488,6 +731,325 @@ footer {
         grid-area: gu1;
     }
 
+    .guldkorn {
+        background-color: rgb(241, 238, 221);
+        color: rgb(33, 80, 152);
+        text-align: center;
+    }
 
+    .guldkorn_places {
+        font-size: 25px;
+        margin-left: 2vw;
+    }
+
+    .guldkorn_info {
+        padding-left: 30vw;
+        padding-right: 30vw;
+    }
+
+    .guldkorn_img {
+        height: 40vh;
+    }
+
+    .guldkorn_dator {
+        padding-left: 25vw;
+        padding-right: 25vw;
+    }
+
+    h3 {
+        margin-left: 2vw;
+    }
+
+    /*Destinations dator*/
+
+
+    #header_destinations {
+        grid-area: he4;
+        border: solid rgb(33, 80, 152);
+        margin-bottom: 2vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 2vh;
+    }
+
+    #destinations_figure {
+        grid-area: fi1;        
+    }
+
+    #countries {
+        grid-area: se2;
+    }
+
+    #guldkorn_destinations {
+        grid-area: gu2;
+    }
+
+    /*Adventures dator*/
+
+
+    #main_img_adventures {
+        display: block;
+        width: 46vw;
+        margin: auto;
+        padding-top: 2vh;
+    }
+
+    #main_figure_adventures {
+        grid-area: fi2;
+    }
+
+    #header_adventures {
+        grid-area: he5;
+        border: solid rgb(33, 80, 152);
+        margin-bottom: 2vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 2vh;
+    }
+
+    #inledning_adventures {
+        grid-area: se5;
+        margin-top: 2vh;
+        color: rgb(33, 80, 152);
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+
+    .adventures_img {
+        width: 40vw;
+        height: auto;
+        padding-left: 2vw;
+    }
+
+    #img_adventures1 {
+        grid-area: fi3; 
+    }
+
+    #img_adventures2 {
+        grid-area: fi4; 
+    }
+
+    #img_adventures3 {
+        grid-area: fi5; 
+    }
+
+    #img_adventures4 {
+        grid-area: fi6; 
+    }
+
+    #img_adventures5 {
+        grid-area: fi7; 
+    }
+
+    #img_adventures6 {
+        grid-area: fi8; 
+    }
+
+    .article_adventures {
+        color: rgb(33, 80, 152);
+        padding-top: 2%;
+        padding-left: 5%;
+        padding-right: 3%;
+    }
+
+
+    #article_adventures1 {
+        grid-area: ar2;
+    }
+
+    #article_adventures2 {
+        grid-area: ar3;
+    }
+
+    #article_adventures3 {
+        grid-area: ar4;
+    }
+
+    #article_adventures4 {
+        grid-area: ar5;
+    }
+
+    #article_adventures5 {
+        grid-area: ar6;
+    }
+
+    #article_adventures6 {
+        grid-area: ar7;
+    }
+
+
+    #guldkorn_adventures {
+        grid-area: gu3;
+    }
+
+
+    /*Before trip dator*/
+
+    #header_before_trip {
+        grid-area: he6;
+        border: solid rgb(33, 80, 152);
+        margin-bottom: 2vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 3vh;
+        background: white;
+        border-radius: 3%;
+    }
+
+    #white_headline {
+        color: white;
+    }
+
+    #backpack {
+        grid-area: se3;
+        margin: 2%;
+        border: solid rgb(33, 80, 152);
+        padding: 3%;
+        margin-left: 10vw;
+        background: white;
+        color: rgb(33, 80, 152);
+        line-height: 1.5;
+        border-radius: 1%;
+
+    }
+
+    #take_with {
+        grid-area: ar8;
+        margin: 2%;
+        border: solid rgb(33, 80, 152);
+        padding: 3%;
+        color: white;
+        background-color: rgb(33, 80, 152);
+        line-height: 1.5;
+        border-radius: 1%;
+    }
+
+    #dont_take_with {
+        grid-area: ar9;
+        margin: 2%;
+        margin-right: 10vw;
+        border: solid rgb(33, 80, 152);
+        padding: 3%;
+        color: rgb(33, 80, 152);
+        background: white;
+        line-height: 1.5;
+        border-radius: 1%;
+    }
+
+    #remeber {
+        grid-area: se4;
+        margin: 2%;
+        border: solid rgb(33, 80, 152);
+        padding: 2%;
+        background: white;
+        color: rgb(33, 80, 152);
+        line-height: 1.5;
+        border-radius: 1%;
+    }
+
+
+    /*Questions dator*/
+    #figure_questions {
+        display: none;
+    }
+
+    #header_questions {
+        grid-area: he7;
+        border: solid rgb(33, 80, 152);
+        margin-bottom: 9vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 7vh;
+    }
+    
+    #questions_img {
+        height: 80vh;
+        display: block;
+        margin: auto;
+        padding-top: 2vh;
+    }
+
+    .the_questions {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        color: rgb(33, 80, 152);
+        line-height: 1.5;
+    }
+
+    .img_questions_side {
+        width: 35vw;
+    }
+
+    #figure_questions1 {
+        grid-area: fi9;
+        background-color: rgb(33, 80, 152);
+        padding-left: 3vw;
+    }
+
+    #figure_questions2 {
+        grid-area: mo7;
+        margin-top: 10vh;
+        padding-left: 7vw;
+    }
+
+    .questions {
+        text-align: left;
+    }
+
+    #question1 {
+        grid-area: mo1;
+        margin-top: 9vh;
+    }
+
+    #question2 {
+        grid-area: mo2;
+        background: rgb(33, 80, 152);
+        color: white;   
+        padding-top: 5vh;
+    }    
+    
+    #white_heder {
+        color: white;
+        text-align: center;
+    }
+
+    #white_head {
+        color: white
+    }
+    
+    #question4 {
+        grid-area: mo4;
+        background-color: rgb(33, 80, 152);
+        color: white;
+        margin-top: 10vh;
+        padding-top: 5vh;
+        padding-right: 10vw;
+        padding-left: 10vw;
+    }    
+
+    #question5 {
+        grid-area: mo5;
+        margin-top: 8vh;
+        border: solid rgb(33, 80, 152);
+        margin-bottom: 10vh;
+        margin-left: 5vw;
+        margin-right: 2vw;
+        padding-top: 3vh;
+    }
+
+    #question6 {
+        grid-area: mo6;
+        margin-top: 8vh;
+        margin-bottom: 10vh;
+        border: solid rgb(33, 80, 152);
+        margin-right: 5vw;
+        margin-left: 2vw;
+        padding-top: 3vh;
+
+    }
+
+    #guldkorn_questions {
+        grid-area: gu4;
+    }
 
 }

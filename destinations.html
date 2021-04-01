@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +10,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
+
 <body>
-      
+
 
     <div class="wrapper_destinations">
         <div class="menu_mobil">
@@ -19,20 +21,22 @@
             </div>
             <ul>
                 <li class="line"><a href="index.html" class="link">Hem</a></li>
-                <li class="line"><a href="destinations.html" class="link">Destinationer</a></li>                
+                <li class="line"><a href="destinations.html" class="link">Destinationer</a></li>
                 <li class="line"><a href="adventures.html" class="link">Äventyr</a></li>
                 <li class="line"><a href="before_trip.html" class="link">Innan resan</a></li>
                 <li class="line"><a href="questions.html" class="link">Frågor & Svar</a></li>
             </ul>
         </div>
 
-        <nav class="voyage_mobil">
+        <nav id="voyage_mobil">
             <div class="menu-button">
                 <i class="material-icons">menu_alt</i>
             </div>
             <a href="index.html" class="link">
                 <img src="/img/the_globe_mobil.png" alt="Voyage!" id="logga_mobil">
-                <p>Voyage!</p>
+            </a>
+            <a href="index.html" class="link">
+                <p><em>Voyage!</em></p>
             </a>
         </nav>
 
@@ -42,47 +46,56 @@
                     <img src="img/the_globe_dator.png" alt="Voyage!" id="logga_dator">
                 </a>
             </div>
-            <a href="destinations.html" class="link"><p>Destinationer</p></a>
-            <a href="adventures.html" class="link"><p>Äventyr</p></a>
-            <a href="before_trip.html" class="link"><p>Innan resan</p></a>
-            <a href="questions.html" class="link"><p>Frågor & Svar</p></a>
-
+            <a href="destinations.html" class="dark_link">
+                <p>Destinationer</p>
+            </a>
+            <a href="adventures.html" class="link">
+                <p>Äventyr</p>
+            </a>
+            <a href="before_trip.html" class="link">
+                <p>Innan resan</p>
+            </a>
+            <a href="questions.html" class="link" >
+                <p>Frågor & Svar</p>
+            </a>
         </nav>
 
 
         <figure id="destinations_figure">
-            <img src="img/map_pin.jpg" alt="Map" class="main_img_mobil">
+            <img src="img/map_pin.jpg" alt="Map" class="main_img">
         </figure>
 
-        <header id="header_destinations_mobil">
+        <header id="header_destinations">
             <h1>Resemål</h1>
         </header>
 
-        <br>
-        <br>
-        <br>
-
-        <section id="countries_mobil">
+        <section id="countries">
             <img src="img/thailand.jpg" alt="Vacation picture of Thailand" class="destinations_img">
             <h2>Thailand</h2>
             <p class="destinations_text">
-                Thailand är ett land med stor variation, allt från de välkända stränderna på Phuket, storstaden Bangkok, 
-                till de mer okända resmålen och öarna i öster. Får du svårt att välja kan du ta hjälp av lokalinvånarna, 
-                som hjälper dig plocka ut de resmål som passar bäst för dig och ditt ressällskap. De kan de mesta om vilka resmål som erbjuder 
-                bäst stränder, shopping, mat och dryck, upplevelser samt vad som passar bäst för dig som reser med barn – oavsett om du 
+                Thailand är ett land med stor variation, allt från de välkända stränderna på Phuket, storstaden Bangkok,
+                till de mer okända resmålen och öarna i öster. Får du svårt att välja kan du ta hjälp av lokalinvånarna,
+                som hjälper dig plocka ut de resmål som passar bäst för dig och ditt ressällskap. De kan de mesta om
+                vilka resmål som erbjuder
+                bäst stränder, shopping, mat och dryck, upplevelser samt vad som passar bäst för dig som reser med barn
+                – oavsett om du
                 ska resa till Phuket-området, Krabi-området, centrala Thailand eller norra Thailand.
             </p>
             <br>
             <br>
             <br>
-            
+
             <img src="img/berlin.jpg" alt="View over Berlin" class="destinations_img">
             <h2>Berlin</h2>
             <p class="destinations_text">
-                Berlin är idag en dynamisk och levande storstad med breda boulevarder och ett kultur-, restaurang-, shopping- och nöjesliv 
-                i absolut framkant. Här trängs historiska monument med trendiga caféer, designhotell, öppna parker, konstnärskvarter, 
-                loppmarknader och exklusiva butiker. Under en resa till Berlin kan du i stort sett njuta av ett stort nöjesutbud dygnet runt,
-                med barer, klubbar, diskotek, teaterföreställningar och massor av livemusik. Staden är också känd för sina många festivaler.
+                Berlin är idag en dynamisk och levande storstad med breda boulevarder och ett kultur-, restaurang-,
+                shopping- och nöjesliv
+                i absolut framkant. Här trängs historiska monument med trendiga caféer, designhotell, öppna parker,
+                konstnärskvarter,
+                loppmarknader och exklusiva butiker. Under en resa till Berlin kan du i stort sett njuta av ett stort
+                nöjesutbud dygnet runt,
+                med barer, klubbar, diskotek, teaterföreställningar och massor av livemusik. Staden är också känd för
+                sina många festivaler.
             </p>
             <br>
             <br>
@@ -91,10 +104,14 @@
             <img src="img/usa.jpg" alt="USA flag" class="destinations_img">
             <h2>United states</h2>
             <p class="destinations_text">
-                En resa till USA kan betyda precis vad som helst, storstäder, sol och bad, shopping, restauranger, kultur, nattliv, 
-                nöjesparker – det finns något för alla. Vad sägs till exempel om en resa till New York, Miami Beach, Los Angeles, Hawaii 
-                eller varför inte en resa med familjen till Disney World i Orlando? Kanske har du Frihetsgudinnan, Vita huset, Golden Gate 
-                Bridge, Grand Canyon, Hollywood Boulevard eller The Strip i Las Vegas på din önskelista. I USA kan erbjuda dig det mesta.
+                En resa till USA kan betyda precis vad som helst, storstäder, sol och bad, shopping, restauranger,
+                kultur, nattliv,
+                nöjesparker – det finns något för alla. Vad sägs till exempel om en resa till New York, Miami Beach, Los
+                Angeles, Hawaii
+                eller varför inte en resa med familjen till Disney World i Orlando? Kanske har du Frihetsgudinnan, Vita
+                huset, Golden Gate
+                Bridge, Grand Canyon, Hollywood Boulevard eller The Strip i Las Vegas på din önskelista. I USA kan
+                erbjuda dig det mesta.
             </p>
             <br>
             <br>
@@ -103,10 +120,14 @@
             <img src="img/tokyo.jpg" alt="Street in Tokyo" class="destinations_img">
             <h2>Tokyo</h2>
             <p class="destinations_text">
-                På en resa till Tokyo kan alla förväntningar och förhoppningar besannas – ät sushi, sjung karaoke, beskåda sumobrottning 
-                eller besök en av de knäppa temarestauranger som finns att välja bland. Under din resa till Tokyo kan vi rekommendera en 
-                tur upp till utsiktsdäcket i Tokyo Tower, som är 333 meter högt. Tunnelbanekartan liknar, med sina 14 linjer, mest ett 
-                färggrant garnnystan. Tokyo är en plats av överväldigande proportioner, med ett shopping- och nöjesutbud som slår det 
+                På en resa till Tokyo kan alla förväntningar och förhoppningar besannas – ät sushi, sjung karaoke,
+                beskåda sumobrottning
+                eller besök en av de knäppa temarestauranger som finns att välja bland. Under din resa till Tokyo kan vi
+                rekommendera en
+                tur upp till utsiktsdäcket i Tokyo Tower, som är 333 meter högt. Tunnelbanekartan liknar, med sina 14
+                linjer, mest ett
+                färggrant garnnystan. Tokyo är en plats av överväldigande proportioner, med ett shopping- och nöjesutbud
+                som slår det
                 mesta. Välkommen till en trendig stad i ständig förändring!
             </p>
             <br>
@@ -116,64 +137,81 @@
             <img src="img/brazil.jpg" alt="View over Rio de Janeiro" class="destinations_img">
             <h2>Brasilien</h2>
             <p class="destinations_text">
-                Sol, samba och fotboll; välkommen till Brasilien! Brasilien är ett stort land som är fullt av upplevelser och sevärdheter, 
-                alltifrån fotboll på stranden till utflykter i Amazonas djungel. Här finns natur, storstad, kust och ett otroligt varierat 
-                folkliv, bland mycket annat. Brasilien är också ett spännande matland, med många rätter som man inte träffar på någon 
-                annanstans. Passa på att prova det lokala utbudet när du är här, till exempel på en churrascaria. En resa till Brasilien är 
+                Sol, samba och fotboll; välkommen till Brasilien! Brasilien är ett stort land som är fullt av
+                upplevelser och sevärdheter,
+                alltifrån fotboll på stranden till utflykter i Amazonas djungel. Här finns natur, storstad, kust och ett
+                otroligt varierat
+                folkliv, bland mycket annat. Brasilien är också ett spännande matland, med många rätter som man inte
+                träffar på någon
+                annanstans. Passa på att prova det lokala utbudet när du är här, till exempel på en churrascaria. En
+                resa till Brasilien är
                 inte komplett utan en fotbollsmatch, lika mycket folkfest som match.
             </p>
 
         </section>
 
-        <br>
 
-        <section id="guldkorn_destinations_mobil" class="guldkorn" class="guldkorn_mobil">
+        <section id="guldkorn_destinations" class="guldkorn">
             <h3>Guldkorn</h3>
 
             <br>
             <img class="guldkorn_img" src="img/ayers_rock.jpg" alt="Ayers Rock">
-                <p class="guldkorn_places">Ayers Rock</p>
-                <p>
-                    Avers rock är en gigantisk stenformation av gyllenfärgad sandsten. Den är 600 miljoner år gammal. Stenen är ca 350 
-                    meter hög och 3,5 kilometer lång. Aboriginernas namn på platsen är Uluru och anses av dem som helig och används än 
-                    idag för ceremonier. Uluru ligger vid orten Yulara i nationalparken Uluru-Kata Tjuta.
-                </p>
-                <br>            
+            <p class="guldkorn_places">Ayers Rock</p>
+            <p>
+                Avers rock är en gigantisk stenformation av gyllenfärgad sandsten. Den är 600 miljoner år gammal. Stenen
+                är ca 350
+                meter hög och 3,5 kilometer lång. Aboriginernas namn på platsen är Uluru och anses av dem som helig och
+                används än
+                idag för ceremonier. Uluru ligger vid orten Yulara i nationalparken Uluru-Kata Tjuta.
+            </p>
+            <br>
         </section>
 
 
-        <footer class="footer_mobil">
+        <footer class="footer1" class="footer_mobil">
             <p class="footer_headline">
                 Besök oss på våra sociala medier:
             </p>
 
             <div class="icons_line">
-                <a href="https://www.instagram.com/"><img class="social_icons" src="/img/instagram.jpg" alt="Instagram logga"></a>
+                <a href="https://www.instagram.com/"><img class="social_icons" src="/img/instagram.jpg"
+                        alt="Instagram logga"></a>
                 <a href="https://www.instagram.com/" class="link">Instagram</a>
                 <br>
             </div>
 
             <div class="icons_line">
-                <a href="https://sv-se.facebook.com/"><img class="social_icons" src="/img/facebook.jpg" alt="Facebook logga"></a>
+                <a href="https://sv-se.facebook.com/"><img class="social_icons" src="/img/facebook.jpg"
+                        alt="Facebook logga"></a>
                 <a href="https://sv-se.facebook.com/" class="link">Facebook</a>
                 <br>
             </div>
 
             <div class="icons_line">
-                <a href="https://mobile.twitter.com/?lang=sv"><img class="social_icons" src="/img/twitter.jpg" alt="Twitter logga"></a>
+                <a href="https://mobile.twitter.com/?lang=sv"><img class="social_icons" src="/img/twitter.jpg"
+                        alt="Twitter logga"></a>
                 <a href="https://mobile.twitter.com/?lang=sv" class="link">Twitter</a>
                 <br>
             </div>
             <br>
             <br>
+        </footer>
 
+        <footer class="footer2">
             <p class="footer_headline">
                 Om oss:
             </p>
             <p>
-                Hemsidan är skapad av några backpackers som med hjälp och lärdom från många andra backapckers satt ihop en hemsida 
-                till dig som ska ut och resa. Tanken var att den skulle fungera som ett komplement eller reseinsperation för den 
+                Hemsidan är skapad av några backpackers som med hjälp och lärdom från många andra backapckers satt ihop
+                en hemsida
+                till dig som ska ut och resa. Tanken var att den skulle fungera som ett komplement eller reseinsperation
+                för den
                 resande, som finns förpackad i mobilen.
+
+                <br>
+                <br>
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, totam necessitatibus atque ipsa sed nisi odio! Tempore perferendis asperiores reprehenderit!
             </p>
             <br>
             <br>
@@ -182,7 +220,7 @@
     </div>
 
 
-
     <script src="/js/main.js"></script>
 </body>
+
 </html>
