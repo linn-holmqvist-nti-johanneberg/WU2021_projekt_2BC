@@ -82,29 +82,18 @@ footer {
 }
 
 #welcome {
-    padding-left: 5vw;
-    padding-right: 2vw;
+    padding-left: 12vw;
+    padding-right: 10vw;
+    padding-top: 5vh;
     font-family: sans-serif;
 }
 
 
 /*Destinationer*/
 
-.destinations_text {
-    display: block;
-    padding-top: 2%;
-    padding-left: 5%;
-    padding-right: 3%;
-}
 
 .main_img {
     width: 100vw;
-}
-
-.destinations_img {
-    display: block;
-    width: 80vw;
-    margin: auto;
 }
 
 
@@ -130,20 +119,33 @@ footer {
         grid-template-rows: 13vh auto 75vh 50vh 27vh auto;
     }
 
-    .wrapper_destinations {
+    .wrapper_destinations_mobil {
         display: grid;
         grid-template-areas: 
         'nav'
         'fi1'
         'he2'
-        'se2'
+        'ci1'
+        'ct1'
+        'ci2'
+        'ct2'
+        'ci3'
+        'ct3'
+        'ci4'
+        'ct4'
+        'ci5'
+        'ct5'
         'gu2'
         'fot'
         'fet'
         ;
         grid-template-columns: 100vw;
-        grid-template-rows: 13vh auto 10vh 345vh 45vh 27vh 48vh;
+        grid-template-rows: 13vh auto 10vh auto auto auto auto auto auto auto auto auto auto 45vh 27vh 48vh;
         color: rgb(33, 80, 152);
+    }
+
+    .wrapper_destinations_dator {
+        display: none;
     }
 
     .wrapper_adventures {
@@ -360,6 +362,10 @@ footer {
         margin: 0;
     }
 
+    #dator_only {
+        display: none;
+    }
+
     #guldkorn_startsida {
         grid-area: gu1;
     }
@@ -375,9 +381,69 @@ footer {
         border: solid rgb(33, 80, 152);
         margin-bottom: 2vh;
     }
+    
+    .destinations_text {
+        display: block;
+        padding-top: 2%;
+        padding-left: 5%;
+        padding-right: 3%;
+    }
 
-    #countries {
-        grid-area: se2;
+    .destinations_img {
+        display: block;
+        width: 80vw;
+        margin: auto;
+    }
+
+    .countries_text {
+        padding-bottom: 8vh;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .countries_img {
+        padding-bottom: 2vh;
+    }
+
+    #countries_img1 {
+        grid-area: ci1;
+        padding-top: 5vh;
+    }
+
+    #countries_text1 {
+        grid-area: ct1;
+    }
+
+    #countries_img2 {
+        grid-area: ci2;
+    }   
+    
+    #countries_text2 {
+        grid-area: ct2;
+    }
+    
+    #countries_img3 {
+        grid-area: ci3;
+    }
+
+    #countries_text3 {
+        grid-area: ct3;
+    }
+
+    #countries_img4 {
+        grid-area: ci4;
+    }
+
+    #countries_text4 {
+        grid-area: ct4;
+    }
+
+    #countries_img5 {
+        grid-area: ci5;
+    }
+
+    #countries_text5 {
+        grid-area: ct5;
     }
 
     #guldkorn_destinations {
@@ -387,6 +453,7 @@ footer {
     #header_img_dator {
         display: none;
     }
+
 
 
     /*Adventures mobil*/
@@ -480,6 +547,7 @@ footer {
         padding-left: 5%;
         padding-right: 3%;
     }
+
 
     #guldkorn_adventures {
         grid-area: gu3;
@@ -604,22 +672,28 @@ footer {
         'fot fet' 
         ;
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 18vh auto 40vh 80vh auto;
+        grid-template-rows: 18vh auto 90vh 80vh auto;
     }
 
-    .wrapper_destinations {
+    .wrapper_destinations_dator {
         display: grid;
         grid-template-areas: 
-        'nav nav'
-        'fi1 fi1'
-        'he4 he4'
-        'se2 se2'
-        'gu2 gu2'
-        'fot fet' 
+        'nav nav nav nav'
+        'fi1 fi1 fi1 fi1'
+        'he4 he4 he4 he4'
+        'ci1 ci1 ci2 ci2'
+        'ci3 ci3 ci4 ci4' 
+        'ci5 ci5 ci6 ci6'
+        'gu2 gu2 gu2 gu2'
+        'fot fot fet fet' 
         ;
-        grid-template-columns: 50vw 50vw;
-        grid-template-rows: 18vh auto 15vh 850vh 70vh auto;
+        grid-template-columns: repeat(4, 25vw);
+        grid-template-rows: 18vh auto 15vh auto auto auto 75vh auto;
         color: rgb(33, 80, 152);
+    }
+
+    .wrapper_destinations_mobil {
+        display: none;
     }
 
     .wrapper_adventures {
@@ -639,7 +713,7 @@ footer {
         'fot fot fet fet' 
         ;
         grid-template-columns: 25vw 25vw 25vw 25vw;
-        grid-template-rows: 18vh auto 15vh 30vh auto 70vh 70vh auto auto auto 75vh auto;
+        grid-template-rows: 18vh auto 15vh auto auto auto auto auto auto auto 75vh auto;
     }
 
     .wrapper_before_trip {
@@ -652,7 +726,7 @@ footer {
         'fot fot fot fet fet fet' 
         ;
         grid-template-columns: 17vw 17vw 16vw 16vw 17vw 17vw;
-        grid-template-rows: 18vh 15vh 160vh 55vh auto;
+        grid-template-rows: 18vh 15vh auto 55vh auto;
         background-image: url("/img/background_view.jpg");
         background-size: cover;
     }
@@ -670,7 +744,7 @@ footer {
         'fot fot fet fet' 
         ;
         grid-template-columns: repeat(4, 25vw);
-        grid-template-rows: 18vh 25vh auto auto 60vh 55vh 70vh auto;
+        grid-template-rows: 18vh 25vh auto auto auto auto 70vh auto;
     }
 
     /* För alla sidor dator*/
@@ -744,13 +818,12 @@ footer {
         grid-area: se1;
         position: relative;
         text-align: center;
-        margin-top: 2vw;
+        color: white;
     }
 
-
     .bildlayout {
-        width: auto;
-        height: 70vh;
+        width: 100vw;
+        height: 82vh;
         border-radius: 3px;
         margin: 0;
     }
@@ -775,8 +848,8 @@ footer {
     }
 
     .guldkorn_info {
-        padding-left: 30vw;
-        padding-right: 30vw;
+        padding-left: 20vw;
+        padding-right: 20vw;
     }
 
     .guldkorn_img {
@@ -808,13 +881,81 @@ footer {
         grid-area: fi1;        
     }
 
-    #countries {
-        grid-area: se2;
+    .destinations_img {
+        display: block;
+        width: 33vw;
+        height: 48vh;
+    }
+
+    .countries {
+        position: relative;
+        width: 33vw;
+        height: 48vh;
+        justify-content: center;
+        margin: 5%;
+    }
+    
+    .countries_text {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: white;
+        padding: 8%;
+        padding-top: 2vh;
+        padding-bottom: 0;
+        border: dotted rgb(33, 80, 152);
+    }
+
+    .countries:hover .countries_text {
+        opacity: 1;
+      }
+
+    .countries_img {
+        padding-bottom: 2vh;
+    }
+
+    #thailand {
+        grid-area: ci1;
+        margin-left: 10vw;
+    }
+
+    #berlin {
+        grid-area: ci2;
+        margin-left: 7vw;
+
+    }   
+    
+    #usa {
+        grid-area: ci3;
+        margin-left: 10vw;
+    }
+
+    #tokyo {
+        grid-area: ci4;
+        margin-left: 7vw;
+    }
+
+    #brasilien {
+        grid-area: ci5;
+        margin-left: 10vw;
+    }
+
+    #frankrike {
+        grid-area: ci6;
+        margin-left: 7vw;
+        margin-bottom: 15vh;
     }
 
     #guldkorn_destinations {
         grid-area: gu2;
     }
+
 
     /*Adventures dator*/
 
@@ -845,6 +986,7 @@ footer {
         color: rgb(33, 80, 152);
         margin-left: 15vw;
         margin-right: 15vw;
+        margin-bottom: 5vh;
     }
 
     #img_adventures1 {
@@ -855,7 +997,7 @@ footer {
     }
 
     #adventures_img1 {
-        width: 45vw;
+        width: 44vw;
     }
 
     #img_adventures2 {
@@ -894,9 +1036,8 @@ footer {
     #img_adventures5 {
         grid-area: fi7; 
         background-color: rgb(33, 80, 152);
-        padding-left: 13vw;
-        padding-right: 3vw;
-        padding-top: 15vh;
+        padding-left: 12vw;
+        padding-top: 17vh;
         padding-bottom: 15vh;
     }
 
@@ -911,7 +1052,7 @@ footer {
     }
 
     #adventures_img6 {
-        width: 50vw;
+        width: 49vw;
     }
 
 
@@ -928,13 +1069,15 @@ footer {
         color: rgb(33, 80, 152);
         padding-top: 12vh;
         padding-right: 5vw;
+        padding-bottom: 7vh;
     }
 
     #article_adventures3 {
         grid-area: ar4;
         color: rgb(33, 80, 152);
-        padding-left: 3vw;
-        padding-top: 15vh;        
+        padding-left: 10vw;
+        padding-top: 10vh; 
+        padding-bottom: 7vh;       
         border-top: solid rgb(33, 80, 152);
     }
 
@@ -953,6 +1096,8 @@ footer {
         color: white;
         padding-right: 7vw;
         padding-top: 8vh;
+        padding-bottom: 8vh;
+
     }
 
     #article_adventures6 {
@@ -961,6 +1106,7 @@ footer {
         padding-left: 7vw;
         padding-right: 3vw;
         padding-top: 8vh;
+        padding-bottom: 5vh;
     }
 
 
@@ -1024,9 +1170,13 @@ footer {
 
     #remeber {
         grid-area: se4;
-        margin: 2%;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-bottom: 4vh;
+        margin-top: 2vh;
         border: solid rgb(33, 80, 152);
         padding: 2%;
+        padding-bottom: 0;
         background: white;
         color: rgb(33, 80, 152);
         line-height: 1.5;
@@ -1069,7 +1219,9 @@ footer {
     #figure_questions1 {
         grid-area: fi9;
         background-color: rgb(33, 80, 152);
-        padding-left: 3vw;
+        padding-left: 5vw;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
     }
 
     #figure_questions2 {
@@ -1112,6 +1264,7 @@ footer {
         padding-top: 5vh;
         padding-right: 10vw;
         padding-left: 10vw;
+        padding-bottom: 10vh;
     }    
 
     #question5 {
@@ -1132,6 +1285,7 @@ footer {
         margin-right: 5vw;
         margin-left: 2vw;
         padding-top: 3vh;
+        padding-bottom: 3vh;
 
     }
 
