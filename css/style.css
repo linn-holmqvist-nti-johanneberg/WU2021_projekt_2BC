@@ -5,7 +5,7 @@
 
 /*Allmänt*/
 p {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -868,7 +868,7 @@ footer {
     /*Destinations dator*/
 
 
-    #header_destinations {
+    #header_destinations1 {
         grid-area: he4;
         border: solid rgb(33, 80, 152);
         margin-bottom: 2vh;
@@ -877,7 +877,7 @@ footer {
         margin-top: 2vh;
     }
 
-    #destinations_figure {
+    #destinations_figure1 {
         grid-area: fi1;        
     }
 
@@ -952,7 +952,7 @@ footer {
         margin-bottom: 15vh;
     }
 
-    #guldkorn_destinations {
+    #guldkorn_destinations1 {
         grid-area: gu2;
     }
 
